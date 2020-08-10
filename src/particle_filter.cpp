@@ -221,6 +221,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
     weights[i] = weights[i] / wsum;
     particles[i].weight = weights[i];
   }
+  
 }
 
 void ParticleFilter::resample() {
